@@ -10,12 +10,15 @@
 class Order
 {
 public:
-  int order_id;
-  int customer_id;
-  std::string product;
+  int id;
+  int screen_id;
+  int order_type_id;
+  bool status;
+  bool paid;
+  bool active;
 
-  Order(int order_id, int customer_id, std::string product)
-      : order_id(order_id), customer_id(customer_id), product(product) {}
+  Order(int id, int screen_id, int order_type_id, bool status, bool paid, bool active)
+      : id(id), screen_id(screen_id), order_type_id(order_type_id), status(status), paid(paid), active(active) {}
 };
 
 #endif // _ORDER_H_

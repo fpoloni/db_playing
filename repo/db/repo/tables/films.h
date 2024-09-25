@@ -15,7 +15,7 @@ public:
   std::string director;
 
   Films(int id, std::string name, int duration, std::string describe, std::string producer, std::string director)
-      : name(name), duration(duration), describe(describe), producer(producer), director(director) {}
+      : id(id), name(name), duration(duration), describe(describe), producer(producer), director(director) {}
 };
 
 #endif //_FILMS_H_

@@ -1,3 +1,5 @@
+
+
 #ifndef _ROOM_H_
 #define _ROOM_H_
 
@@ -8,9 +10,10 @@ class Room
 public:
   int id;
   std::string name;
-  std::string status;
+  int seat_no;
 
-  Room(int id, std::string name, std::string status)
-      : id(id), name(name), status(status) {}
+  Room(int id, std::string name, int seat_no)
+      : id(id), name(name), seat_no(seat_no) {}
 };
-#endif // _ROOM_H_
+
+#endif //_ROOM_H_
